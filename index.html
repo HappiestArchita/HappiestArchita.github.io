@@ -1,121 +1,183 @@
-<style>
-nav a {
-    text-decoration: none;
-    transition: 0.3s;
-}
-nav a:hover {
-    color: #ffdd57;
-}
-</style>
-<nav style="
-    background:#1a73e8; 
-    padding:16px; 
-    text-align:left;
-    position:sticky;
-    top:0;
-    z-index:1000;
-">
-    <a href="index.html" style="color:white; margin:10px; font-weight:500;">Home</a>
-    <a href="about.html" style="color:white; margin:10px;">About Me</a>
-    <a href="projects.html" style="color:white; margin:10px;">Projects</a>
-    <a href="Architectures.html" style="color:white; margin:10px;">Architectures</a>
-    <a href="Patterns.html" style="color:white; margin:10px;">Patterns</a>
-    <a href="Technologies.html" style="color:white; margin:10px;">Technologies</a>
-    <a href="Publications.html" style="color:white; margin:10px;">Publications</a>
-    <a href="AI.html" style="color:white; margin:10px;">Data and AI</a>
-    <a href="Best Practices & Learnings.html" style="color:white; margin:10px;">Best Practies and Lessons Learnt</a>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Archita | Engineering Leader</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+        }
+
+        nav {
+            background: rgba(15, 23, 42, 0.9);
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            backdrop-filter: blur(10px);
+        }
+
+        nav a {
+            color: #e2e8f0;
+            margin: 12px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: auto;
+            color: #94a3b8;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            color: #38bdf8;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+        }
+
+        .highlight {
+            color: #38bdf8;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #38bdf8;
+            color: black;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="Architectures.html">Architectures</a>
+    <a href="Patterns.html">Patterns</a>
+    <a href="Technologies.html">Technologies</a>
+    <a href="Publications.html">Publications</a>
 </nav>
 
-<section style="padding:40px; text-align:center;">
-    <h1>Hi, I'm Archita</h1>
-    <h2>Technical Engineering Leader </h2>
-    <p style="max-width:600px; margin:auto; font-size:16px;">
-        I design and build along with my team  scalable, resilient, and high-performance systems that power modern digital platforms.
-        With over 20 years of experience, I specialize in distributed systems, platform engineering,
-        and cloud transformation at enterprise scale. Apart from  this I have lead  2 lean and  1 Six Sigma Project.
-        I have Extensive cross-domain experience designing and scaling systems across diverse industries,
-    enabling deep understanding of domain-specific challenges and system-level solutions.
+<div class="hero">
+    <h1>Archita</h1>
+    <p>
+       Technical Engineering Leader designing, building and delivering scalable systems, leading cloud transformation,
+        and building high-performance engineering organizations.
+    </p>
+</div>
+
+<section>
+    <h2>What I Do</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>⚙️ Architecture</h3>
+            <p>Design distributed systems, microservices, and scalable platforms.</p>
+        </div>
+        <div class="card">
+            <h3>☁️ Cloud Transformation</h3>
+            <p>Lead modernization initiatives across enterprise platforms.</p>
+        </div>
+        <div class="card">
+            <h3>📊 Data Platforms</h3>
+            <p>Build ETL/ELT pipelines and scalable data systems.</p>
+        </div>
+        <div class="card">
+            <h3>⚡ Operations Systems</h3>
+            <p>Design power management and operational systems at scale.</p>
+        </div>
+    </div>
 </section>
 
-<section style="padding:30px;">
+<section>
+    <h2>Domain Expertise</h2>
+    <div class="grid">
+        <div class="card">🏭 Industrial Automation</div>
+        <div class="card">⚡ Energy Management</div>
+        <div class="card">🎓 Education</div>
+        <div class="card">🩺 Healthcare Devices</div>
+        <div class="card">🏥 Healthcare & Insurance</div>
+        <div class="card">🛍️ Retail & CPG</div>
+    </div>
+</section>
+
+<section>
+    <h2>Impact</h2>
     <div class="card">
-        <h2>What I Do</h2>
-        <p>
-           As Technical Engineering Leader I work at the intersection of delivery & stakeholder management , team coaching , architecture, engineering, and business strategy — 
-            translating complex problems into scalable, customer-centric solutions asuring quality , timelines and cost.
-        </p>
         <ul>
-    <li> AI-Native Engineering &amp; Governance - Adoption of GitHub Copilot and AI-assisted
-development workflows - AI governance practices (secure usage, validation, code
-quality controls) - Exposure to AI agents, MCP workflows, and automation-led
-engineering</li>
-<li>Platform &amp; Distributed Systems - Designed high-scale distributed systems with 99.9%+
-availability - Microservices, API-first architectures, event-driven systems - Cloud-native
-platforms (AWS, Azure)</li>
-<li>DevSecOps, SRE &amp; Reliability - SLO/SLI/error budget implementation - Observability
-(logs, metrics, tracing) - Secure SDLC, threat modeling, risk-based prioritization
-Engineering Leadership &amp; Org Scaling - Scaled teams from 0 → 45 → 120+ engineers
-globally - Built and mentored Engineering Managers and senior leaders - Strong global
-delivery across US, EU, India</li>
-<li>Operational Excellence &amp; Delivery - Improved predictability, quality, and velocity - KPI-
-driven engineering culture (latency, reliability, defects) </li>
+            <li>Led enterprise-scale cloud transformation</li>
+            <li>Designed distributed systems across domains</li>
+            <li>Scaled engineering teams and delivery</li>
+            <li>Improved system reliability and performance</li>
         </ul>
     </div>
 </section>
 
-<section style="padding:30px;">
+<section>
+    <h2>Leadership Philosophy</h2>
     <div class="card">
-        <h2>Core Expertise</h2>
-         <li>Distributed Systems</li>
-            <liMicroservices</li>
-            <liData Platforms</li>
-            <li>ETL / ELT </li>
-            <li>Cloud (AWS / Azure / GCP)</li>
-            <li>DevOps</li>
-            <li>CyberSecurity</li>
-            <li>UI/UX</li>
-            <li>Hybrid Applications</li>
-         </div>
-</section>
-
-<section style="padding:30px;">
-    <div class="card">
-        <h2>Leadership Philosophy</h2>
         <p>
-            I believe great systems are not just built — they are designed with intention.
-            Architecture, teams, and business goals must evolve together.
+            I focus on <span class="highlight">system thinking</span> — understanding how systems behave,
+            scale, and evolve over time.
         </p>
         <p>
-            My focus is on system thinking — understanding how components interact, how decisions scale,
-            and how to design systems that adapt to change.
+            “You don’t control outcomes — you design conditions that produce them.”
         </p>
-        <p><b>
-            “You don’t control outcomes directly — you design the conditions that produce them.”
-        </b></p>
     </div>
 </section>
 
-<section style="padding:30px;">
-    <div class="card">
-        <h2>Impact Highlights</h2>
-        <ul>
-            <li>Led large-scale cloud transformation initiatives across enterprise platforms</li>
-            <li>Built scalable data platforms and pipelines (ETL / ELT)</li>
-            <li>Designed distributed microservices architectures and optimized them for complexity</li>
-            <li>Improved system reliability, scalability, and engineering velocity</li>
-            <li>Worked across global teams driving architecture and execution alignment</li>
-        </ul>
-    </div>
+<section style="text-align:center;">
+    <h2>Explore My Work</h2>
+    <a class="btn" href="Publications.html">View Publications</a>
 </section>
 
-<section style="padding:30px; text-align:center;">
-    <div class="card">
-        <h2>Explore My Work</h2>
-        <p>
-            Learn more about my experience, architecture insights, projects , patterns used and technical thought leadership.
-        </p>
-        <a href="about.html">About Me</a> |
-        <a href="projects.html">Projects</a> |
-        <a href="Publications.html">Publications</a>
-    </div>
-</section>
+</body>
+</html>
