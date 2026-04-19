@@ -106,3 +106,43 @@ Each phase has shaped my understanding of scalability, complexity, and system de
 </div>
 
 </section>
+<div class="card">
+    <h2>🤖 AI & Modern Platform Architecture</h2>
+
+    <p>
+        As systems evolve, architecture is increasingly shaped by AI-driven workflows,
+        data platforms, and intelligent automation.
+    </p>
+
+    <h3>⚙️ Key Components</h3>
+    <ul>
+        <li><b>Data Layer:</b> Data pipelines (ETL/ELT), real-time streaming, and storage systems</li>
+        <li><b>Model Layer:</b> Integration with LLMs and AI models (OpenAI, etc.)</li>
+        <li><b>Orchestration Layer:</b> Workflow engines and agent-based systems</li>
+        <li><b>API Layer:</b> Exposing services for internal and external consumption</li>
+        <li><b>Observability:</b> Monitoring AI outputs, feedback loops, and system behavior</li>
+    </ul>
+
+    <h3>🔄 System Flow</h3>
+    <p>
+        Data → Processing → AI Model → Decision → Feedback Loop → Continuous Improvement
+    </p>
+
+    <h3>🧠 Key Considerations</h3>
+    <ul>
+        <li>Latency vs accuracy trade-offs</li>
+        <li>Cost of inference vs scale</li>
+        <li>Governance and guardrails for AI systems</li>
+        <li>Integration with existing enterprise systems</li>
+    </ul>
+
+    <h3>🚀 My Approach</h3>
+    <p>
+        I focus on designing AI-enabled systems that are not just intelligent,
+        but also scalable, observable, and aligned with business workflows.
+    </p>
+
+    <p><b>
+        AI systems are not standalone — they are part of larger socio-technical systems.
+    </b></p>
+</div>
