@@ -1,1 +1,106 @@
+<section style="padding:50px; max-width:1000px; margin:auto;">
 
+<h1 style="text-align:center; color:#38bdf8;">Architectural Evolution</h1>
+
+<p style="text-align:center; max-width:800px; margin:auto;">
+My journey in software architecture reflects the evolution of technology itself — 
+from standalone systems to distributed, cloud-native platforms. 
+Each phase has shaped my understanding of scalability, complexity, and system design trade-offs.
+</p>
+
+<!-- SECTION -->
+<div class="card">
+    <h2>💻 Standalone Systems</h2>
+    <p>
+        Started with desktop-based applications where the entire system was self-contained.
+        This phase built strong fundamentals in application design, performance, and direct user interaction.
+    </p>
+</div>
+
+<div class="card">
+    <h2>🔗 Service-Based Architecture</h2>
+    <p>
+        Transitioned into service-oriented thinking by building web services in Java and .NET.
+        This introduced concepts of separation of concerns, interoperability, and reusable services.
+    </p>
+</div>
+
+<div class="card">
+    <h2>📡 WCF-Based Architecture</h2>
+    <p>
+        Worked extensively with WCF, enabling structured communication between systems.
+        Focused on contracts, bindings, and service reliability in enterprise environments.
+    </p>
+</div>
+
+<div class="card">
+    <h2>🌐 RESTful Architecture</h2>
+    <p>
+        Shifted towards REST-based services, designing lightweight, scalable APIs in Java.
+        Embraced stateless communication, resource-oriented design, and web-scale principles.
+    </p>
+</div>
+
+<div class="card">
+    <h2>⚙️ .NET Web API Architecture</h2>
+    <p>
+        Built modern API-driven systems using .NET Web API, enabling seamless integration,
+        improved performance, and standardized service interfaces across platforms.
+    </p>
+</div>
+
+<div class="card">
+    <h2>🖥️ Web Application Evolution</h2>
+    <p>
+        Transitioned from ASPX-based applications to ASP.NET, improving maintainability,
+        scalability, and separation of UI and business logic.
+    </p>
+</div>
+
+<div class="card">
+    <h2>⚡ Single Page Applications (SPA)</h2>
+    <p>
+        Adopted modern frontend paradigms using JavaScript and jQuery.
+        Developed strong understanding of browser-side execution, asynchronous behavior,
+        and rich user experience design.
+    </p>
+</div>
+
+<div class="card">
+    <h2>🧠 Client & Server-Side JavaScript</h2>
+    <p>
+        Gained deep expertise in both client-side and server-side JavaScript,
+        understanding execution models, performance considerations, and system interactions.
+    </p>
+</div>
+
+<div class="card">
+    <h2>🌍 Microservices Architecture</h2>
+    <p>
+        Evolved into designing distributed microservices systems.
+        Focused on scalability, resilience, service boundaries, and operational complexity.
+        Learned critical trade-offs between flexibility and system complexity.
+    </p>
+</div>
+
+<!-- INSIGHT -->
+<div class="card">
+    <h2>🧩 Key Insight</h2>
+    <p>
+        Architecture is not about following trends — it is about choosing the right approach
+        based on context, scale, and business needs.
+    </p>
+
+    <p>
+        My journey reinforced that:
+    </p>
+
+    <ul>
+        <li>Every architecture introduces trade-offs</li>
+        <li>Complexity grows with distribution</li>
+        <li>System thinking is essential for scalable design</li>
+        <li>Context matters more than trends</li>
+    </ul>
+</div>
+
+</section>
