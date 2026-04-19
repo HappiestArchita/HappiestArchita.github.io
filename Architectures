@@ -17,6 +17,61 @@ Each phase has shaped my understanding of scalability, complexity, and system de
         Started with desktop-based applications where the entire system was self-contained.
         This phase built strong fundamentals in application design, performance, and direct user interaction.
     </p>
+<div class="card">
+    <h2>💻 Standalone Desktop Architecture (Tightly Coupled)</h2>
+
+    <p>
+        Early in my career, I worked on standalone desktop applications where all components 
+        — UI, business logic, and data access — were tightly integrated within a single application.
+    </p>
+
+    <h3>⚙️ Architecture Overview</h3>
+    <p>
+        The system follows a single-tier or layered structure but runs as one deployable unit:
+    </p>
+
+    <ul>
+        <li><b>UI Layer:</b> Handles user interaction and presentation</li>
+        <li><b>Business Logic:</b> Contains core application logic</li>
+        <li><b>Data Access:</b> Direct interaction with local database/files</li>
+    </ul>
+
+    <h3>🔗 Key Characteristics</h3>
+    <ul>
+        <li>Strong coupling between UI, logic, and data layers</li>
+        <li>All components run within the same process</li>
+        <li>Minimal separation of concerns</li>
+        <li>Direct database or file system access</li>
+    </ul>
+
+    <h3>✅ Advantages</h3>
+    <ul>
+        <li>Simple to design and implement</li>
+        <li>Fast performance (no network latency)</li>
+        <li>Easy debugging in small-scale systems</li>
+    </ul>
+
+    <h3>⚠️ Limitations</h3>
+    <ul>
+        <li>Low scalability</li>
+        <li>Difficult to maintain as system grows</li>
+        <li>Limited reusability of components</li>
+        <li>Hard to support multiple users or distributed environments</li>
+    </ul>
+
+    <h3>🧠 Key Learning</h3>
+    <p>
+        This architecture built strong foundational understanding of application design,
+        but also highlighted the importance of separation of concerns and modularity 
+        as systems scale.
+    </p>
+   <h3>🧠Where This Works Best</h3>
+    <p>
+        This architecture built strong foundational understanding of application design,
+        but also highlighted the importance of separation of concerns and modularity 
+        as systems scale.
+    </p>
+</div>
 </div>
 
 <div class="card">
