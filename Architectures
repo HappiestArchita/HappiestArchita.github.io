@@ -71,6 +71,51 @@ Each phase has shaped my understanding of scalability, complexity, and system de
         but also highlighted the importance of separation of concerns and modularity 
         as systems scale.
     </p>
+<div class="card">
+    <h3>📍 Where Standalone Architecture Works Best</h3>
+
+    <p>
+        While modern systems often favor distributed architectures, standalone (tightly coupled)
+        systems remain highly relevant in environments where performance, security, and reliability
+        are critical.
+    </p>
+
+    <h4>🏭 Typical Use Cases</h4>
+    <ul>
+        <li>Industrial control systems (power plants, nuclear facilities)</li>
+        <li>Medical devices requiring real-time precision and safety</li>
+        <li>Submarine and defense systems with constrained connectivity</li>
+        <li>Petroleum refineries and manufacturing control systems</li>
+        <li>Space systems and mission-critical environments</li>
+    </ul>
+
+    <h4>⚙️ Why Standalone Works in These Environments</h4>
+    <ul>
+        <li><b>Performance Critical:</b> Minimal latency due to absence of network calls</li>
+        <li><b>High Reliability:</b> Reduced dependency on external systems</li>
+        <li><b>Data Security:</b> Systems are isolated with limited external exposure</li>
+        <li><b>Low Connectivity:</b> Designed to operate in offline or constrained environments</li>
+        <li><b>Device-Level Interaction:</b> Direct communication with hardware components</li>
+    </ul>
+
+    <h4>🧠 System Characteristics</h4>
+    <ul>
+        <li>Heavy reliance on OS-level and kernel-based communication</li>
+        <li>Real-time processing and deterministic behavior</li>
+        <li>Close integration with hardware and embedded systems</li>
+        <li>Limited tolerance for failure or latency</li>
+    </ul>
+    <h4>🔍 Key Insight</h4>
+    <p>
+        Not all systems benefit from distribution. In highly controlled, performance-sensitive,
+        and safety-critical environments, tightly coupled standalone systems often provide
+        better reliability and predictability than distributed architectures.
+    </p>
+
+    <p><b>
+        Architecture should always be chosen based on context — not trends.
+    </b></p>
+</div>
 </div>
 </div>
 
