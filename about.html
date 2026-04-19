@@ -1,110 +1,108 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Archita | Engineering Leader</title>
+<title>About | Archita</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background: #0f172a;
-            color: #e2e8f0;
-        }
+<style>
+body {
+    margin:0;
+    font-family:'Segoe UI';
+    background:#0f172a;
+    color:#e2e8f0;
+}
 
-        nav {
-            background: rgba(15, 23, 42, 0.9);
-            padding: 15px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            backdrop-filter: blur(10px);
-        }
+/* SECTION */
+section {
+    padding:60px 20px;
+    max-width:1100px;
+    margin:auto;
+}
 
-        nav a {
-            color: #e2e8f0;
-            margin: 12px;
-            text-decoration: none;
-            font-weight: 500;
-        }
+h1,h2 {
+    text-align:center;
+    color:#38bdf8;
+}
 
-        nav a:hover {
-            color: #38bdf8;
-        }
+/* CARD */
+.card {
+    background:#1e293b;
+    padding:25px;
+    border-radius:12px;
+    margin-top:20px;
+    transition:0.3s;
+}
 
-        .hero {
-            text-align: center;
-            padding: 100px 20px;
-            background: linear-gradient(135deg, #1e293b, #0f172a);
-        }
+.card:hover {
+    transform:translateY(-5px);
+}
 
-        .hero h1 {
-            font-size: 50px;
-            margin-bottom: 10px;
-        }
+/* TIMELINE */
+.timeline {
+    border-left:2px solid #38bdf8;
+    padding-left:20px;
+}
 
-        .hero p {
-            font-size: 20px;
-            max-width: 700px;
-            margin: auto;
-            color: #94a3b8;
-        }
+.timeline-item {
+    margin-bottom:30px;
+    opacity:0;
+    transform:translateY(20px);
+    animation:fadeUp 0.6s forwards;
+}
 
-        section {
-            padding: 60px 20px;
-            max-width: 1100px;
-            margin: auto;
-        }
+.timeline-item:nth-child(1){animation-delay:0.2s;}
+.timeline-item:nth-child(2){animation-delay:0.4s;}
+.timeline-item:nth-child(3){animation-delay:0.6s;}
+.timeline-item:nth-child(4){animation-delay:0.8s;}
+.timeline-item:nth-child(5){animation-delay:1s;}
+.timeline-item:nth-child(6){animation-delay:1.2s;}
 
-        h2 {
-            text-align: center;
-            color: #38bdf8;
-        }
+@keyframes fadeUp {
+    to {
+        opacity:1;
+        transform:translateY(0);
+    }
+}
 
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 25px;
-            margin-top: 40px;
-        }
+/* CAROUSEL */
+.carousel {
+    display:flex;
+    overflow:hidden;
+    gap:40px;
+    animation:scroll 20s linear infinite;
+}
 
-        .card {
-            background: #1e293b;
-            padding: 25px;
-            border-radius: 12px;
-            transition: 0.3s;
-        }
+.carousel img {
+    height:60px;
+    background:white;
+    padding:10px;
+    border-radius:8px;
+}
 
-        .card:hover {
-            transform: translateY(-6px);
-        }
+@keyframes scroll {
+    from {transform:translateX(0);}
+    to {transform:translateX(-50%);}
+}
 
-        .highlight {
-            color: #38bdf8;
-        }
+/* IMPACT GRID */
+.grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
 
-        .btn {
-            display: inline-block;
-            background: #38bdf8;
-            color: black;
-            padding: 12px 20px;
-            border-radius: 8px;
-            text-decoration: none;
-            margin-top: 20px;
-        }
+/* MAP */
+iframe {
+    width:100%;
+    height:450px;
+    border-radius:12px;
+    border:none;
+}
 
-    </style>
+</style>
 </head>
 
 <body>
 
-<body>
-<nav>
-   <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="architectures.html">Architectures</a>
-    <a href="patterns.html">Patterns</a>
-    <a href="technologies.html">Technologies</a>
-</nav>
 <section>
 <h1>About Me</h1>
 
@@ -223,7 +221,7 @@ Asia, Europe, North America, South America, and Africa.
 <div class="card">
 <p>
 Worked with stakeholders across Asia, Europe, North America, South America, and Africa,
-driving global engineering alignment , UAT and bug fixing decisions.
+driving global engineering alignment and architecture decisions.
 </p>
 </div>
 
