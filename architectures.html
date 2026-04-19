@@ -87,8 +87,98 @@
             margin-top: 20px;
         }
 
-    </style>
-</head>
+      <style>
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+/* PREMIUM CARD */
+.card {
+    background: linear-gradient(145deg, #1e293b, #0f172a);
+    padding: 25px;
+    border-radius: 16px;
+    text-decoration: none;
+    color: #e2e8f0;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    border: 1px solid rgba(56, 189, 248, 0.1);
+}
+
+      
+/* GLOW EFFECT */
+.card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(56,189,248,0.15), transparent 70%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+/* HOVER EFFECT */
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    border: 1px solid rgba(56,189,248,0.4);
+}
+
+/* GLOW ON HOVER */
+.card:hover::before {
+    opacity: 1;
+}
+
+/* TITLE */
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* TEXT */
+.card p {
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+/* SMOOTH SCROLL */
+html {
+    scroll-behavior: smooth;
+}
+      /*ANIMATION */
+      <style>
+.card {
+    animation: fadeUp 0.6s ease forwards;
+    opacity: 0;
+}
+
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(5) { animation-delay: 0.5s; }
+.card:nth-child(6) { animation-delay: 0.6s; }
+.card:nth-child(7) { animation-delay: 0.7s; }
+
+@keyframes fadeUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+</style>
+</style>
+   </head>
 
 <section style="padding:50px; max-width:1000px; margin:auto;">
 <p style="text-align:center; font-style:italic; color:#94a3b8;">
@@ -103,238 +193,45 @@ Each phase has shaped my understanding of scalability, complexity, and system de
 </p>
 
 <!-- SECTION -->
-<div class="card">
-    <h2>💻 Standalone Systems</h2>
-    <p>
-        Started with desktop-based applications where the entire system was self-contained.
-        This phase built strong fundamentals in application design, performance, and direct user interaction.
-    </p>
-<div class="card">
-    <h2>💻 Standalone Desktop Architecture (Tightly Coupled)</h2>
+<section style="padding:50px;">
+    <h2 style="text-align:center; color:#38bdf8;">Architectural Journey</h2>
 
-    <p>
-        Early in my career, I worked on standalone desktop applications where all components 
-        — UI, business logic, and data access — were tightly integrated within a single application.
-    </p>
+    <div class="grid">
 
-    <h3>⚙️ Architecture Overview</h3>
-    <p>
-        The system follows a single-tier or layered structure but runs as one deployable unit:
-    </p>
+        <a href="#standalone" class="card">
+            <h3>💻 Standalone Systems</h3>
+            <p>Tightly coupled desktop architectures with direct device interaction</p>
+        </a>
 
-    <ul>
-        <li><b>UI Layer:</b> Handles user interaction and presentation</li>
-        <li><b>Business Logic:</b> Contains core application logic</li>
-        <li><b>Data Access:</b> Direct interaction with local database/files</li>
-    </ul>
+        <a href="#service" class="card">
+            <h3>🔗 Service-Based</h3>
+            <p>Early web services using Java and .NET ecosystems</p>
+        </a>
 
-    <h3>🔗 Key Characteristics</h3>
-    <ul>
-        <li>Strong coupling between UI, logic, and data layers</li>
-        <li>All components run within the same process</li>
-        <li>Minimal separation of concerns</li>
-        <li>Direct database or file system access</li>
-    </ul>
+        <a href="#wcf" class="card">
+            <h3>📡 WCF Architecture</h3>
+            <p>Structured enterprise communication frameworks</p>
+        </a>
 
-    <h3>✅ Advantages</h3>
-    <ul>
-        <li>Simple to design and implement</li>
-        <li>Fast performance (no network latency)</li>
-        <li>Easy debugging in small-scale systems</li>
-    </ul>
+        <a href="#rest" class="card">
+            <h3>🌐 REST APIs</h3>
+            <p>Lightweight, scalable, stateless service design</p>
+        </a>
 
-    <h3>⚠️ Limitations</h3>
-    <ul>
-        <li>Low scalability</li>
-        <li>Difficult to maintain as system grows</li>
-        <li>Limited reusability of components</li>
-        <li>Hard to support multiple users or distributed environments</li>
-    </ul>
+        <a href="#webapi" class="card">
+            <h3>⚙️ .NET Web API</h3>
+            <p>Modern API-first architecture patterns</p>
+        </a>
 
-    <h3>🧠 Key Learning</h3>
-    <p>
-        This architecture built strong foundational understanding of application design,
-        but also highlighted the importance of separation of concerns and modularity 
-        as systems scale.
-    </p>
-   <h3>🧠Where This Works Best</h3>
-    <p>
-        This architecture built strong foundational understanding of application design,
-        but also highlighted the importance of separation of concerns and modularity 
-        as systems scale.
-    </p>
-<div class="card">
-    <h3>📍 Where Standalone Architecture Works Best</h3>
+        <a href="#spa" class="card">
+            <h3>⚡ SPA & JavaScript</h3>
+            <p>Rich frontend experiences with async behavior</p>
+        </a>
 
-    <p>
-        While modern systems often favor distributed architectures, standalone (tightly coupled)
-        systems remain highly relevant in environments where performance, security, and reliability
-        are critical.
-    </p>
+        <a href="#microservices" class="card">
+            <h3>🌍 Microservices</h3>
+            <p>Distributed systems with scalability and trade-offs</p>
+        </a>
 
-    <h4>🏭 Typical Use Cases</h4>
-    <ul>
-        <li>Industrial control systems (power plants, nuclear facilities)</li>
-        <li>Medical devices requiring real-time precision and safety</li>
-        <li>Submarine and defense systems with constrained connectivity</li>
-        <li>Petroleum refineries and manufacturing control systems</li>
-        <li>Space systems and mission-critical environments</li>
-    </ul>
-
-    <h4>⚙️ Why Standalone Works in These Environments</h4>
-    <ul>
-        <li><b>Performance Critical:</b> Minimal latency due to absence of network calls</li>
-        <li><b>High Reliability:</b> Reduced dependency on external systems</li>
-        <li><b>Data Security:</b> Systems are isolated with limited external exposure</li>
-        <li><b>Low Connectivity:</b> Designed to operate in offline or constrained environments</li>
-        <li><b>Device-Level Interaction:</b> Direct communication with hardware components</li>
-    </ul>
-
-    <h4>🧠 System Characteristics</h4>
-    <ul>
-        <li>Heavy reliance on OS-level and kernel-based communication</li>
-        <li>Real-time processing and deterministic behavior</li>
-        <li>Close integration with hardware and embedded systems</li>
-        <li>Limited tolerance for failure or latency</li>
-    </ul>
-    <h4>🔍 Key Insight</h4>
-    <p>
-        Not all systems benefit from distribution. In highly controlled, performance-sensitive,
-        and safety-critical environments, tightly coupled standalone systems often provide
-        better reliability and predictability than distributed architectures.
-    </p>
-
-    <p><b>
-        Architecture should always be chosen based on context — not trends.
-    </b></p>
-</div>
-</div>
-</div>
-
-<div class="card">
-    <h2>🔗 Service-Based Architecture</h2>
-    <p>
-        Transitioned into service-oriented thinking by building web services in Java and .NET.
-        This introduced concepts of separation of concerns, interoperability, and reusable services.
-    </p>
-</div>
-
-<div class="card">
-    <h2>📡 WCF-Based Architecture</h2>
-    <p>
-        Worked extensively with WCF, enabling structured communication between systems.
-        Focused on contracts, bindings, and service reliability in enterprise environments.
-    </p>
-</div>
-
-<div class="card">
-    <h2>🌐 RESTful Architecture</h2>
-    <p>
-        Shifted towards REST-based services, designing lightweight, scalable APIs in Java.
-        Embraced stateless communication, resource-oriented design, and web-scale principles.
-    </p>
-</div>
-
-<div class="card">
-    <h2>⚙️ .NET Web API Architecture</h2>
-    <p>
-        Built modern API-driven systems using .NET Web API, enabling seamless integration,
-        improved performance, and standardized service interfaces across platforms.
-    </p>
-</div>
-
-<div class="card">
-    <h2>🖥️ Web Application Evolution</h2>
-    <p>
-        Transitioned from ASPX-based applications to ASP.NET, improving maintainability,
-        scalability, and separation of UI and business logic.
-    </p>
-</div>
-
-<div class="card">
-    <h2>⚡ Single Page Applications (SPA)</h2>
-    <p>
-        Adopted modern frontend paradigms using JavaScript and jQuery.
-        Developed strong understanding of browser-side execution, asynchronous behavior,
-        and rich user experience design.
-    </p>
-</div>
-
-<div class="card">
-    <h2>🧠 Client & Server-Side JavaScript</h2>
-    <p>
-        Gained deep expertise in both client-side and server-side JavaScript,
-        understanding execution models, performance considerations, and system interactions.
-    </p>
-</div>
-
-<div class="card">
-    <h2>🌍 Microservices Architecture</h2>
-    <p>
-        Evolved into designing distributed microservices systems.
-        Focused on scalability, resilience, service boundaries, and operational complexity.
-        Learned critical trade-offs between flexibility and system complexity.
-    </p>
-</div>
-
-<!-- INSIGHT -->
-<div class="card">
-    <h2>🧩 Key Insight</h2>
-    <p>
-        Architecture is not about following trends — it is about choosing the right approach
-        based on context, scale, and business needs.
-    </p>
-
-    <p>
-        My journey reinforced that:
-    </p>
-
-    <ul>
-        <li>Every architecture introduces trade-offs</li>
-        <li>Complexity grows with distribution</li>
-        <li>System thinking is essential for scalable design</li>
-        <li>Context matters more than trends</li>
-    </ul>
-</div>
-
+    </div>
 </section>
-<div class="card">
-    <h2>🤖 AI & Modern Platform Architecture</h2>
-
-    <p>
-        As systems evolve, architecture is increasingly shaped by AI-driven workflows,
-        data platforms, and intelligent automation.
-    </p>
-
-    <h3>⚙️ Key Components</h3>
-    <ul>
-        <li><b>Data Layer:</b> Data pipelines (ETL/ELT), real-time streaming, and storage systems</li>
-        <li><b>Model Layer:</b> Integration with LLMs and AI models (OpenAI, etc.)</li>
-        <li><b>Orchestration Layer:</b> Workflow engines and agent-based systems</li>
-        <li><b>API Layer:</b> Exposing services for internal and external consumption</li>
-        <li><b>Observability:</b> Monitoring AI outputs, feedback loops, and system behavior</li>
-    </ul>
-
-    <h3>🔄 System Flow</h3>
-    <p>
-        Data → Processing → AI Model → Decision → Feedback Loop → Continuous Improvement
-    </p>
-
-    <h3>🧠 Key Considerations</h3>
-    <ul>
-        <li>Latency vs accuracy trade-offs</li>
-        <li>Cost of inference vs scale</li>
-        <li>Governance and guardrails for AI systems</li>
-        <li>Integration with existing enterprise systems</li>
-    </ul>
-
-    <h3>🚀 My Approach</h3>
-    <p>
-        I focus on designing AI-enabled systems that are not just intelligent,
-        but also scalable, observable, and aligned with business workflows.
-    </p>
-
-    <p><b>
-        AI systems are not standalone — they are part of larger socio-technical systems.
-    </b></p>
-</div>
