@@ -22,6 +22,40 @@ L.marker([0, 20]).addTo(map).bindPopup("Africa");
 <title>About | Archita</title>
 
 <style>
+.journey {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    margin-top:30px;
+}
+
+.step {
+    background:#1e293b;
+    padding:12px 18px;
+    border-radius:20px;
+    font-size:14px;
+    border:1px solid rgba(56,189,248,0.2);
+    transition:0.3s;
+}
+
+.step:hover {
+    transform:translateY(-3px);
+    border-color:#38bdf8;
+}
+
+.arrow {
+    color:#38bdf8;
+    font-size:18px;
+}
+
+.highlight {
+    background:#38bdf8;
+    color:black;
+    font-weight:bold;
+}
+</style>
 body {
     margin:0;
     font-family:'Segoe UI';
@@ -246,6 +280,47 @@ Asia, Europe, North America, South America, and Africa.
 </div>
 
 </div>
+</section>
+<!--Career Progression*--> 
+    <section>
+ <p style="text-align:center; color:#94a3b8;">
+From hands-on engineering to strategic leadership — evolving across roles, scale, and impact.
+</p>
+<h2>Career Evolution</h2>
+
+<div class="journey">
+
+    <div class="step">Intern</div>
+    <div class="arrow">→</div>
+
+    <div class="step">GET</div>
+    <div class="arrow">→</div>
+
+    <div class="step">Software Engineer</div>
+    <div class="arrow">→</div>
+
+    <div class="step">Senior Software Engineer</div>
+    <div class="arrow">→</div>
+
+    <div class="step">Module Leader</div>
+    <div class="arrow">→</div>
+
+    <div class="step">Technical Leader</div>
+    <div class="arrow">→</div>
+
+    <div class="step">Project Manager</div>
+    <div class="arrow">→</div>
+
+    <div class="step">Delivery Manager</div>
+    <div class="arrow">→</div>
+
+    <div class="step">General Manager</div>
+    <div class="arrow">→</div>
+
+    <div class="step highlight">Chapter Leader</div>
+
+</div>
+
 </section>
 
 <!-- COMPANY LOGO CAROUSEL -->
