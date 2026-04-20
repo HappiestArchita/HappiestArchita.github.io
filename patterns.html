@@ -1,1 +1,279 @@
-Patterns I Know
+<!DOCTYPE html>
+<html>
+<head>
+<title>Architecture Patterns</title>
+
+<style>
+body {
+    margin:0;
+    font-family:'Segoe UI';
+    background:#0f172a;
+    color:#e2e8f0;
+}
+
+/* NAVBAR */
+nav {
+    background: rgba(15, 23, 42, 0.9);
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color:#e2e8f0;
+    margin:12px;
+    text-decoration:none;
+}
+
+nav a:hover {
+    color:#38bdf8;
+}
+
+/* SECTION */
+section {
+    padding:60px 20px;
+    max-width:1200px;
+    margin:auto;
+}
+
+h1, h2 {
+    text-align:center;
+    color:#38bdf8;
+}
+
+/* GRID */
+.grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+    gap:20px;
+    margin-top:30px;
+}
+
+/* CARD */
+.card {
+    background:#1e293b;
+    padding:20px;
+    border-radius:12px;
+    transition:0.3s;
+    border:1px solid rgba(56,189,248,0.1);
+}
+
+.card:hover {
+    transform:translateY(-8px);
+    border-color:#38bdf8;
+    box-shadow:0 10px 25px rgba(56,189,248,0.2);
+}
+
+.card h3 {
+    margin-bottom:10px;
+    color:#38bdf8;
+}
+
+.tag {
+    display:inline-block;
+    background:#0f172a;
+    padding:5px 10px;
+    margin:5px 5px 0 0;
+    border-radius:6px;
+    font-size:12px;
+    color:#94a3b8;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="architectures.html">Architectures</a>
+    <a href="patterns.html" style="color:#38bdf8;">Patterns</a>
+    <a href="technologies.html">Technologies</a>
+    <a href="publications.html">Publications</a>
+</nav>
+
+<section>
+
+<h1>🧠 Architecture Patterns</h1>
+
+<p style="text-align:center; color:#94a3b8;">
+Applied across desktop, web, distributed systems, and cloud — driven by context, not trends.
+</p>
+
+<!-- DESKTOP -->
+<h2>🖥️ Desktop & Rich Client</h2>
+<div class="grid">
+
+<div class="card">
+<h3>MVVM</h3>
+<p>Separation of UI and logic enabling testability and maintainability.</p>
+<span class="tag">WPF</span>
+<span class="tag">Data Binding</span>
+</div>
+
+<div class="card">
+<h3>MVP</h3>
+<p>Decouples UI from business logic through presenter abstraction.</p>
+<span class="tag">Legacy UI</span>
+</div>
+
+<div class="card">
+<h3>MVC (Early)</h3>
+<p>Structured UI interaction in early desktop-web hybrid systems.</p>
+</div>
+
+</div>
+
+<!-- WEB -->
+<h2>🌐 Web Application</h2>
+<div class="grid">
+
+<div class="card">
+<h3>MVC</h3>
+<p>Separation of concerns across UI, business logic, and routing.</p>
+<span class="tag">ASP.NET</span>
+</div>
+
+</div>
+
+<!-- API -->
+<h2>🔗 API & Service Design</h2>
+<div class="grid">
+
+<div class="card">
+<h3>RESTful API</h3>
+<p>Lightweight, stateless communication aligned with web standards.</p>
+<span class="tag">JSON</span>
+</div>
+
+<div class="card">
+<h3>Layered Architecture</h3>
+<p>Structured separation of controllers, services, and data layers.</p>
+</div>
+
+<div class="card">
+<h3>API Gateway</h3>
+<p>Centralized entry point for managing services and routing.</p>
+</div>
+
+</div>
+
+<!-- SERVICES -->
+<h2>⚙️ Service & Integration</h2>
+<div class="grid">
+
+<div class="card">
+<h3>SOA</h3>
+<p>Service-oriented design enabling reusable enterprise services.</p>
+</div>
+
+<div class="card">
+<h3>SOAP</h3>
+<p>Contract-driven communication for enterprise systems.</p>
+</div>
+
+<div class="card">
+<h3>WebSockets</h3>
+<p>Real-time bidirectional communication for live systems.</p>
+</div>
+
+</div>
+
+<!-- MICROSERVICES -->
+<h2>🌍 Microservices</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Microservices</h3>
+<p>Independent services enabling scalability and team autonomy.</p>
+</div>
+
+<div class="card">
+<h3>Circuit Breaker</h3>
+<p>Prevents cascading failures in distributed systems.</p>
+</div>
+
+<div class="card">
+<h3>Retry Pattern</h3>
+<p>Improves resilience in transient failures.</p>
+</div>
+
+<div class="card">
+<h3>Event-Driven</h3>
+<p>Loose coupling using asynchronous communication.</p>
+</div>
+
+</div>
+
+<!-- MONOLITH -->
+<h2>🧩 Modular Monolith</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Modular Monolith</h3>
+<p>Structured modules within a single deployable system.</p>
+</div>
+
+</div>
+
+<!-- CLOUD -->
+<h2>☁️ Cloud Patterns</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Cloud-Native</h3>
+<p>Designed for scalability, resilience, and automation.</p>
+</div>
+
+<div class="card">
+<h3>Hybrid Cloud</h3>
+<p>Combines on-prem and cloud for flexibility.</p>
+</div>
+
+<div class="card">
+<h3>Multi-Cloud</h3>
+<p>Distributes workloads across providers to reduce risk.</p>
+</div>
+
+<div class="card">
+<h3>Containerization</h3>
+<p>Portable deployment using Docker and orchestration.</p>
+</div>
+
+</div>
+
+<!-- FRONTEND -->
+<h2>⚡ Frontend & SPA</h2>
+<div class="grid">
+
+<div class="card">
+<h3>SPA</h3>
+<p>Rich client-side applications with dynamic rendering.</p>
+</div>
+
+<div class="card">
+<h3>Component Architecture</h3>
+<p>Reusable UI components for scalable frontend systems.</p>
+</div>
+
+</div>
+
+<!-- FINAL -->
+<div class="card">
+<h2>🔍 Final Thought</h2>
+
+<p>
+Patterns are not solutions — they are tools.
+</p>
+
+<p><b>
+The real skill lies in choosing the right pattern for the right context.
+</b></p>
+
+</div>
+
+</section>
+
+</body>
+</html>
