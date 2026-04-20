@@ -1,1 +1,287 @@
-Technologies That I Learnt
+<!DOCTYPE html>
+<html>
+<head>
+<title>Technologies</title>
+
+<style>
+body {
+    margin:0;
+    font-family:'Segoe UI';
+    background:#0f172a;
+    color:#e2e8f0;
+}
+
+/* NAVBAR */
+nav {
+    background: rgba(15, 23, 42, 0.9);
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color:#e2e8f0;
+    margin:12px;
+    text-decoration:none;
+}
+
+nav a:hover {
+    color:#38bdf8;
+}
+
+/* SECTION */
+section {
+    padding:60px 20px;
+    max-width:1200px;
+    margin:auto;
+}
+
+h1, h2 {
+    text-align:center;
+    color:#38bdf8;
+}
+
+/* GRID */
+.grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px,1fr));
+    gap:20px;
+    margin-top:30px;
+}
+
+/* CARD */
+.card {
+    background:#1e293b;
+    padding:20px;
+    border-radius:12px;
+    transition:0.3s;
+    border:1px solid rgba(56,189,248,0.1);
+}
+
+.card:hover {
+    transform:translateY(-8px);
+    border-color:#38bdf8;
+    box-shadow:0 10px 25px rgba(56,189,248,0.2);
+}
+
+.card h3 {
+    margin-bottom:10px;
+    color:#38bdf8;
+}
+
+.tag {
+    display:inline-block;
+    background:#0f172a;
+    padding:5px 10px;
+    margin:5px 5px 0 0;
+    border-radius:6px;
+    font-size:12px;
+    color:#94a3b8;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="architectures.html">Architectures</a>
+    <a href="patterns.html">Patterns</a>
+    <a href="technologies.html" style="color:#38bdf8;">Technologies</a>
+    <a href="publications.html">Publications</a>
+</nav>
+
+<section>
+
+<h1>⚙️ Technologies & Platforms</h1>
+
+<p style="text-align:center; color:#94a3b8;">
+Technologies applied across the stack — from desktop to cloud, aligned with architecture evolution.
+</p>
+
+<!-- PROGRAMMING -->
+<h2>💻 Programming & Backend</h2>
+<div class="grid">
+
+<div class="card">
+<h3>.NET Ecosystem</h3>
+<p>Enterprise application development across multiple framework generations.</p>
+<span class="tag">.NET 1.1 – .NET Core</span>
+<span class="tag">C#</span>
+</div>
+
+<div class="card">
+<h3>Java Ecosystem</h3>
+<p>Service-based and enterprise backend systems.</p>
+<span class="tag">J2EE</span>
+<span class="tag">Web Services</span>
+</div>
+
+</div>
+
+<!-- WEB -->
+<h2>🌐 Web & Frontend</h2>
+<div class="grid">
+
+<div class="card">
+<h3>JavaScript Ecosystem</h3>
+<p>Dynamic web applications and client-side architectures.</p>
+<span class="tag">JavaScript</span>
+<span class="tag">jQuery</span>
+</div>
+
+<div class="card">
+<h3>Modern Frameworks</h3>
+<p>Component-based UI and SPA development.</p>
+<span class="tag">AngularJS</span>
+<span class="tag">Angular</span>
+<span class="tag">React</span>
+</div>
+
+<div class="card">
+<h3>Web Platforms</h3>
+<p>Evolution of web applications from server-rendered to SPA.</p>
+<span class="tag">ASP.NET</span>
+<span class="tag">ASPX</span>
+</div>
+
+</div>
+
+<!-- API -->
+<h2>🔗 APIs & Integration</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Web APIs</h3>
+<p>Building scalable REST-based services.</p>
+<span class="tag">.NET Web API</span>
+<span class="tag">REST</span>
+</div>
+
+<div class="card">
+<h3>Service Frameworks</h3>
+<p>Enterprise communication and service orchestration.</p>
+<span class="tag">WCF</span>
+<span class="tag">SOAP</span>
+</div>
+
+<div class="card">
+<h3>Real-Time Communication</h3>
+<p>Low-latency interaction systems.</p>
+<span class="tag">WebSockets</span>
+</div>
+
+</div>
+
+<!-- CLOUD -->
+<h2>☁️ Cloud & Platforms</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Cloud Providers</h3>
+<p>Scalable cloud infrastructure and services.</p>
+<span class="tag">Azure</span>
+<span class="tag">AWS</span>
+</div>
+
+<div class="card">
+<h3>Cloud Architecture</h3>
+<p>Designing cloud-native, hybrid, and multi-cloud systems.</p>
+<span class="tag">Hybrid Cloud</span>
+<span class="tag">Multi-Cloud</span>
+</div>
+
+<div class="card">
+<h3>Containers & Orchestration</h3>
+<p>Portable and scalable deployments.</p>
+<span class="tag">Docker</span>
+<span class="tag">Kubernetes</span>
+</div>
+
+</div>
+
+<!-- DEVOPS -->
+<h2>🚀 DevOps & Platform Engineering</h2>
+<div class="grid">
+
+<div class="card">
+<h3>CI/CD & Automation</h3>
+<p>Automated pipelines and continuous delivery systems.</p>
+<span class="tag">CI/CD</span>
+<span class="tag">Automation</span>
+</div>
+
+<div class="card">
+<h3>Observability</h3>
+<p>Monitoring, logging, and system visibility.</p>
+<span class="tag">Logging</span>
+<span class="tag">Monitoring</span>
+</div>
+
+<div class="card">
+<h3>Infrastructure as Code</h3>
+<p>Scalable infrastructure provisioning and management.</p>
+<span class="tag">IaC</span>
+</div>
+
+</div>
+
+<!-- SECURITY -->
+<h2>🔐 Cybersecurity</h2>
+<div class="grid">
+
+<div class="card">
+<h3>Secure Architecture</h3>
+<p>Security-by-design across systems and platforms.</p>
+<span class="tag">Authentication</span>
+<span class="tag">Authorization</span>
+</div>
+
+<div class="card">
+<h3>Data Protection</h3>
+<p>Ensuring privacy, compliance, and data integrity.</p>
+<span class="tag">Encryption</span>
+<span class="tag">Compliance</span>
+</div>
+
+</div>
+
+<!-- UX -->
+<h2>🎨 UX/UI & Experience</h2>
+<div class="grid">
+
+<div class="card">
+<h3>User Experience Design</h3>
+<p>Designing intuitive and scalable user interactions.</p>
+<span class="tag">UX</span>
+<span class="tag">UI</span>
+</div>
+
+<div class="card">
+<h3>Frontend Performance</h3>
+<p>Optimizing responsiveness and usability.</p>
+<span class="tag">Performance</span>
+</div>
+
+</div>
+
+<!-- FINAL -->
+<div class="card">
+<h2>🔍 Final Thought</h2>
+
+<p>
+Technologies evolve — principles remain.
+</p>
+
+<p><b>
+The real value lies not in knowing tools, but in applying them effectively within the right architectural context.
+</b></p>
+
+</div>
+
+</section>
+
+</body>
+</html>
