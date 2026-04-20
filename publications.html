@@ -1,1 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Architecture Decision Framework</title>
 
+<style>
+body {
+    margin:0;
+    font-family:'Segoe UI';
+    background:#0f172a;
+    color:#e2e8f0;
+}
+
+section {
+    padding:60px 20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+h1,h2,h3 {
+    color:#38bdf8;
+}
+
+.card {
+    background:#1e293b;
+    padding:25px;
+    border-radius:12px;
+    margin-top:20px;
+    transition:0.3s;
+}
+
+.card:hover {
+    transform:translateY(-5px);
+}
+
+pre {
+    background:#0f172a;
+    color:#38bdf8;
+    padding:15px;
+    border-radius:8px;
+}
+
+/* NAVBAR */
+nav {
+    background: rgba(15, 23, 42, 0.9);
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color:#e2e8f0;
+    margin:12px;
+    text-decoration:none;
+}
+
+nav a:hover {
+    color:#38bdf8;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="architectures.html">Architectures</a>
+    <a href="projects.html">Projects</a>
+    <a href="patterns.html">Patterns</a>
+    <a href="technologies.html">Technologies</a>
+    <a href="publications.html">Publications</a>
+</nav>
+
+<section>
+
+<h1>🧠 Architecture Decision Framework</h1>
+
+<div class="card">
+<p>
+Over the years, one of the most important lessons I’ve learned is that
+<b>architecture decisions are not about choosing technologies — they are about making trade-offs.</b>
+</p>
+
+<p>
+There is no “best architecture”. There is only the most appropriate architecture
+for a given context.
+</p>
+</div>
+
+<div class="card">
+
+<h2>🧭 Step 1: Understand the Problem Context</h2>
+
+<ul>
+<li>What business problem are we solving?</li>
+<li>What are the scale and performance requirements?</li>
+<li>What are the regulatory and security constraints?</li>
+<li>What is the expected growth?</li>
+</ul>
+
+<p><b>Insight:</b> Poor architecture decisions often start with poor problem understanding.</p>
+
+</div>
+
+<div class="card">
+
+<h2>⚖️ Step 2: Identify Constraints</h2>
+
+<ul>
+<li>Budget and timelines</li>
+<li>Team skills and maturity</li>
+<li>Existing systems and dependencies</li>
+<li>Infrastructure limitations</li>
+</ul>
+
+<p><b>Insight:</b> Constraints are not blockers — they are decision drivers.</p>
+
+</div>
+
+<div class="card">
+
+<h2>🔄 Step 3: Evaluate Trade-offs</h2>
+
+<pre>
+Performance vs Scalability
+Flexibility vs Simplicity
+Speed vs Maintainability
+Control vs Cost
+</pre>
+
+<p>
+Every architectural decision solves one problem while creating another.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🏗️ Step 4: Choose the Right Pattern</h2>
+
+<ul>
+<li>Monolith vs Modular Monolith vs Microservices</li>
+<li>REST vs Event-driven</li>
+<li>Cloud-native vs Hybrid</li>
+<li>Synchronous vs Asynchronous</li>
+</ul>
+
+<p><b>Insight:</b> Patterns should emerge from needs — not trends.</p>
+
+</div>
+
+<div class="card">
+
+<h2>📊 Step 5: Think in Systems</h2>
+
+<ul>
+<li>How do components interact?</li>
+<li>What are the feedback loops?</li>
+<li>What happens under failure?</li>
+<li>How does the system behave at scale?</li>
+</ul>
+
+<p><b>Insight:</b> Most failures happen in interactions, not components.</p>
+
+</div>
+
+<div class="card">
+
+<h2>🚀 Step 6: Design for Evolution</h2>
+
+<ul>
+<li>Can the system evolve over time?</li>
+<li>Is it easy to extend or modify?</li>
+<li>Are boundaries clearly defined?</li>
+</ul>
+
+<p><b>Insight:</b> Architecture is not static — it must adapt.</p>
+
+</div>
+
+<div class="card">
+
+<h2>🔍 Step 7: Validate with Real Scenarios</h2>
+
+<ul>
+<li>Failure scenarios</li>
+<li>Load conditions</li>
+<li>Edge cases</li>
+</ul>
+
+<p><b>Insight:</b> Design for reality, not ideal conditions.</p>
+
+</div>
+
+<div class="card">
+
+<h2>🧠 Decision Model (Simplified)</h2>
+
+<pre>
+Context → Constraints → Trade-offs → Decision → Validation → Evolution
+</pre>
+
+</div>
+
+<div class="card">
+
+<h2>🔥 Real-World Learning</h2>
+
+<p>
+In one of the programs, we adopted microservices early expecting scalability.
+While individual services were well-designed, the system became complex due to dependencies and operational overhead.
+</p>
+
+<p>
+We later simplified parts of the system into a modular monolith — improving delivery speed and maintainability.
+</p>
+
+<p><b>
+The learning: The right architecture is not the most modern —
+it is the one that fits the context.
+</b></p>
+
+</div>
+
+<div class="card">
+
+<h2>🔍 Final Thought</h2>
+
+<pre>
+Good architects choose technologies.
+Great architects choose trade-offs.
+</pre>
+
+<p><b>
+Architecture is not about building systems —
+it is about designing outcomes.
+</b></p>
+
+</div>
+
+</section>
+
+</body>
+</html>
