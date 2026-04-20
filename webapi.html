@@ -1,1 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>.NET Web API Architecture</title>
 
+<style>
+body {
+    margin:0;
+    font-family:'Segoe UI';
+    background:#0f172a;
+    color:#e2e8f0;
+}
+
+section {
+    padding:60px 20px;
+    max-width:1000px;
+    margin:auto;
+}
+
+h1,h2,h3 {
+    color:#38bdf8;
+}
+
+.card {
+    background:#1e293b;
+    padding:25px;
+    border-radius:12px;
+    margin-top:20px;
+}
+
+pre {
+    background:#0f172a;
+    color:#38bdf8;
+    padding:15px;
+    border-radius:8px;
+    overflow:auto;
+}
+
+/* NAVBAR */
+nav {
+    background: rgba(15, 23, 42, 0.9);
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color:#e2e8f0;
+    margin:12px;
+    text-decoration:none;
+}
+
+nav a:hover {
+    color:#38bdf8;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="architectures.html">Architectures</a>
+    <a href="projects.html">Projects</a>
+    <a href="patterns.html">Patterns</a>
+    <a href="technologies.html">Technologies</a>
+    <a href="publications.html">Publications</a>
+</nav>
+
+<section>
+
+<h1>⚙️ .NET Web API Architecture</h1>
+
+<div class="card">
+
+<p>
+The transition from traditional web services and WCF to modern distributed systems
+required a simpler, more flexible way to expose services. This led to the adoption of
+<b>.NET Web API</b> — a framework designed to build HTTP-based services aligned with REST principles.
+</p>
+
+<h2>🧭 Evolution Context</h2>
+<p>
+After working with SOAP and WCF-based services, the need for lightweight,
+web-friendly APIs became critical. .NET Web API emerged as a natural progression,
+bridging enterprise systems with modern web and mobile applications.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>⚙️ Architecture Overview</h2>
+
+<pre>
+[ Client (Web / Mobile / SPA) ]
+            ↓ HTTP (JSON)
+[ .NET Web API Controllers ]
+            ↓
+[ Business Logic / Services ]
+            ↓
+[ Database / External Systems ]
+</pre>
+
+</div>
+
+<div class="card">
+
+<h2>🚀 Key Features</h2>
+
+<ul>
+<li>RESTful service development using HTTP verbs (GET, POST, PUT, DELETE)</li>
+<li>Lightweight communication using JSON</li>
+<li>Separation of concerns using controllers and services</li>
+<li>Easy integration with frontend frameworks (Angular, React)</li>
+<li>Support for dependency injection and modular design</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>✅ Benefits</h2>
+
+<ul>
+<li>Simplified service development compared to WCF</li>
+<li>Better performance due to lightweight payloads</li>
+<li>Improved developer productivity</li>
+<li>Flexible and scalable architecture</li>
+<li>Aligned with modern web and cloud ecosystems</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>⚠️ Limitations</h2>
+
+<ul>
+<li>Lack of strict contracts compared to SOAP/WCF</li>
+<li>Requires explicit handling of security and validation</li>
+<li>Versioning challenges in large systems</li>
+<li>Potential for inconsistent API design without governance</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>📍 Where It Works Best</h2>
+
+<ul>
+<li>Web and mobile applications</li>
+<li>Microservices architectures</li>
+<li>Cloud-native systems</li>
+<li>Integration platforms and APIs</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>🚫 Where It May Not Fit</h2>
+
+<ul>
+<li>Highly transactional enterprise systems requiring strict contracts</li>
+<li>Complex orchestration workflows (better handled by orchestration engines)</li>
+<li>Real-time streaming (better suited for WebSockets or event-driven systems)</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>🔄 Transition from WCF</h2>
+
+<p>
+In real-world systems, the transition from WCF to Web API was gradual.
+Legacy services continued to operate on WCF, while new services were built using Web API.
+</p>
+
+<ul>
+<li>Reduced complexity in service development</li>
+<li>Improved frontend integration</li>
+<li>Faster development cycles</li>
+<li>Better alignment with REST and microservices</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>🧠 Key Learning</h2>
+
+<p>
+.NET Web API demonstrated that simplicity and alignment with web standards
+can significantly improve scalability and developer productivity.
+</p>
+
+<p><b>
+The shift was not just technological — it was a mindset change from
+contract-heavy systems to flexible, consumer-driven APIs.
+</b></p>
+
+</div>
+
+</section>
+
+</body>
+</html>
